@@ -52,6 +52,9 @@ function draw() {
   edges= createEdgeSprites();
   boy.collide(edges[3]);
   // colisión de boy con los límites derecho e izquierdo invisibles 
+
+  boy.collide(leftBoundary);
+  boy.collide(rightBoundary);
   
   //código para reiniciar el fondo
   if(path.y > 400 ){
